@@ -59,8 +59,8 @@ public class BulletinSalaireTest {
         assertThat(bulletinSalaireAvecMontantDtoOptional.isPresent()).isTrue();
         BulletinSalaireAvecMontantDto bulletinSalaireAvecMontantDto = bulletinSalaireAvecMontantDtoOptional.get();
         assertThat(bulletinSalaireAvecMontantDto.getSalaireDto().getSalaireBrut().compareTo(new BigDecimal("2672.00"))==0).isTrue();
-        assertThat(bulletinSalaireAvecMontantDto.getSalaireDto().getSalaireNetAPayer().compareTo(new BigDecimal("2079.62"))==0).isTrue();
-        assertThat(bulletinSalaireAvecMontantDto.getSalaireDto().getSalaireNetImposable().compareTo(new BigDecimal("2157.11"))==0).isTrue();
+        assertThat(bulletinSalaireAvecMontantDto.getSalaireDto().getSalaireNetAPayer().compareTo(new BigDecimal("2079.61"))==0).isTrue();
+        assertThat(bulletinSalaireAvecMontantDto.getSalaireDto().getSalaireNetImposable().compareTo(new BigDecimal("2157.10"))==0).isTrue();
 
 
     }
